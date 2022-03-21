@@ -46,11 +46,6 @@ object SongUtils {
         }
     }
 
-    fun shareMultipleMusics(vararg positions: ArrayList<Int>) {
-//        TODO(share multiple musics)
-    }
-
-
     fun getSongById(id: Long): SongModel? {
         for (song in LibraryFragment.viewModel.getDataSet()) {
             if (song.id == id)

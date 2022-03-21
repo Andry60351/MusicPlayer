@@ -90,8 +90,6 @@ class SongsRepository(val context: Context) {
                 if (cursor.getLong(AudioColumns.DURATION)!! > 60000)
                     songsAreInStorage.add(createSongFromCursor(cursor))
             } while (!cursor.isLast)
-        } else {
-//                TODO(handle null cursor)
         }
         cursor?.close()
         return songsAreInStorage

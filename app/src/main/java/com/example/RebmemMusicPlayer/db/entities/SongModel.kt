@@ -11,7 +11,7 @@ data class SongModel(
     val dateAdded : String? = "",
     val artist : String? = "",
     val uri : Uri? = null,
-    val albumId : Long? = -1, //TODO(change to long)
+    val albumId : Long? = -1,
     val size: String? = "",
     val bitrate : String? ="",
     val image : Bitmap? = null,
@@ -22,6 +22,4 @@ data class SongModel(
     val artistName: String? = "",
     val composer: String? = "",
     val albumArtist: String?= ""
-) {
-//    TODO(handle if attr was null)
-}
+)
